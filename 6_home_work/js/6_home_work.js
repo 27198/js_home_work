@@ -40,6 +40,4 @@ let temperatures = [
     [111, 313, 351, 314],
     [134, 111, 452],
 ];
-if (temperatures[0].some(x => x > 500)) console.log("Температура поднималась выше 500 в 1 приборе")
-if (temperatures[1].some(x => x > 500)) console.log("Температура поднималась выше 500 во 2 приборе")
-if (temperatures[2].some(x => x > 500)) console.log("Температура поднималась выше 500 в 3 приборе")
+if (temperatures.some(x => x.some(temp => temp > 500))) console.log("Температура поднималась выше 500 в 1 приборе")
