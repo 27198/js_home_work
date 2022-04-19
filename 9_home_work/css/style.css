@@ -1,0 +1,23 @@
+table {
+    table-layout: fixed;
+    width: 60%;
+    border-collapse: collapse;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+td, th {
+    border: 2px solid rgb(0, 0, 0);
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dbe7ed;   
+}
+
+tbody tr:nth-child(1) {
+    background-color: #e4a97f;
+    font-weight: bold;
+}
+

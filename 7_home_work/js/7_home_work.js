@@ -1,33 +1,4 @@
 'use strict'
-// Задача 1
-// Написать функцию, которая принимает на вход три аргумента:
-// obj - объект, например, items,
-// from - число,
-// to - число.
-// Функция формирует и возвращает новый ОБЪЕКТ с объектами, значения свойств price которых лежат в диапазоне от значения from 
-// до значения to, не включая to.
-
-function zadacha_1(obj, from, to){
-    let arr = []
-    for (obj of arr) {
-        if (obj.price >= from || obj.price < to)
-        arr.push(obj)
-    }
-    return arr
-}
-
-
-// Написать функцию, которая принимает на вход три аргумента:
-// obj - объект, например, items,
-// itemTitle - строка, название товара, который хочет приобрести 
-// пользователь,
-// countToCart - число, количество товара, который хочет приобрести
-//  пользователь.
-// Функция должна найти товар с указанным в itemTitle названием и:
-// если количество позволяет, то уменьшить значение свойства count 
-// в переданном объекте на countToCart вернуть true,
-// если количество не позволяет, то вывести информацию об этом 
-// в консоль и вернуть false.
 
 let item = {
     piano: {
@@ -56,18 +27,51 @@ let item = {
         count: 5
     }
 };
-function zadacha_2 (obj, itemTitle, countToCart){
+
+
+// Задача 1
+// Написать функцию, которая принимает на вход три аргумента:
+// obj - объект, например, items,
+// from - число,
+// to - число.
+// Функция формирует и возвращает новый ОБЪЕКТ с объектами, значения свойств price которых лежат в диапазоне от значения from 
+// до значения to, не включая to.
+
+function zadacha_1(obj, from, to){
     let arr = []
     for (obj of arr) {
-        if (itemTitle === item.titile) {
-            if (countToCart >= count) false 
-            if (countToCart < count) true
+        if (obj.price >= from || obj.price < to)
+        arr.push(obj)
+    }
+    return arr
+}
+console.log(zadacha_1(item))
+
+// Написать функцию, которая принимает на вход три аргумента:
+// obj - объект, например, items,
+// itemTitle - строка, название товара, который хочет приобрести 
+// пользователь,
+// countToCart - число, количество товара, который хочет приобрести
+//  пользователь.
+// Функция должна найти товар с указанным в itemTitle названием и:
+// если количество позволяет, то уменьшить значение свойства count 
+// в переданном объекте на countToCart вернуть true,
+// если количество не позволяет, то вывести информацию об этом 
+// в консоль и вернуть false.
+
+
+function zadacha_2 (obj, itemTitle, countToCart){
+    let arr = []
+    for (let obj of arr) {
+        if (itemTitle === item[obj].title) {
+            if (countToCart >= item[obj].count) false 
+            if (countToCart < item[obj].count) true
         }
         arr.push(obj)
     }
     return arr
 }
-
+console.log(zadacha_2(item))
 
 // Задача 3
 // Отсортировать массив books по значению свойства 
