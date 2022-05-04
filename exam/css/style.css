@@ -1,0 +1,73 @@
+@import "flex-grid.css";
+
+form {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-gap: 15px;
+    justify-content: center;
+}
+.inputForm {
+    display: grid;
+    
+    margin: 0;
+    grid-auto-rows: minmax(25px);
+}
+h1 {
+    font-size: 25px; 
+    font-weight: bold
+}
+
+h2 {
+    font-size: 20px;
+    color: green;
+    text-align: right;
+    /* display: none; */
+}
+form {
+    font-size: 20px;
+}
+.error1,
+.error2 {
+    font-size: 15px;
+    color: red;
+    /* display: none; */
+}
+
+.r12 {
+    width: 220px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.r23 {
+    width: 440px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+    
+#buttonAdd {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+}
+button {
+    height: 30px;
+    margin-bottom: 5px;
+    
+}
+.addAction {
+    height: 30px;
+}
+.divAdd {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.discr {
+    height: 70px;
+}

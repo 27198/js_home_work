@@ -58,7 +58,7 @@ for (let x of Object.values(goods)) {
     if (x.count > 0) {
         count.innerHTML =
             `<button class="minus">-</button>
-             <span>${y}</span>
+             <span>0</span>
              <button class="plus">+</button>`;
     } else {
         count.innerHTML = "<span>Товара нет в наличии</span>";

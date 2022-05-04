@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<form action="#" method="post" name="add_task">
+    
+    <div class="inputForm">
+        <h1 class="r12">Добавление задачи</h1>
+        <h2 class="r23 addTask"></h2>
+    </div>
+
+    <div class="inputForm">
+        <p class="r12">Название задачи</p>
+        <input class="r23" type="text" placeholder="Введите название задачи" autofocus name="taskName">
+        <p class="error1 r23"></p>
+    </div>
+
+    <div class="inputForm">
+        <p class="r12">Описание задачи</p>
+        <input class="r23" type="text" placeholder="Введите описание задачи" autofocus name="taskDiscription">
+    </div>
+
+    <div class="inputForm">
+        <p class="r12">Срок выполнения задачи</p>
+        <input class="r23" type="datetime-local" placeholder="Дата и время" autofocus name="dateTime">
+        <p class="error2 r23"></p>
+    </div>
+
+    <div>
+
+        <button type="button" class="r12" id="add-btn">Добавить участника</button>
+        
+        <div class="divAdd">
+            
+        </div>
+    </div>
+
+    <button type="submit" id="buttonAdd">Добавить задачу</button>
+
+</form>
+<script src="js/exam.js"></script>
+</body>
+</html>
