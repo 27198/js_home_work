@@ -1,0 +1,21 @@
+body  {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-gap: 15px;
+    justify-content: center;
+    
+}
+
+p1 {
+    font-weight: bold
+}
+.tasks {
+    display: block;
+    background-color: aliceblue;
+}
+.tasks > div {
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+}

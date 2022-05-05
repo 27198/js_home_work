@@ -25,13 +25,15 @@ function taskAdd(event){
         description: document.forms.add_task.elements.taskDiscription.value.trim(),
         date: date
     };
-    
+
     let tasks = localStorage.getItem("tasks");
     tasks = JSON.parse(tasks);
+    if (!tasks) {
+        tasks = [];
+    }
     tasks.push(task);
     localStorage.setItem("tasks", JSON.stringify(tasks));
     console.log(tasks);
-    this.reset();
 
     let taskAdd = document.querySelector(".addTask");
     taskAdd.innerText = "Задача успешно добавлена";
